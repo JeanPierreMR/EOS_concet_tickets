@@ -1,0 +1,42 @@
+LIST OF COMMANDS
+
+#Create account for ticket vendor
+
+	cleos create key --to-console
+	cleos create account eosio name_of_vendor publickey_from_previous_command 
+	cleos wallet import --name local --private-key private_key_from_previous_command
+	
+
+#issue token for prescription
+
+cleos push action nft create '{"issuer":"name_of_vendor", "symbol":"condert_id"}' --permission nft@active
+
+
+
+cleos push action nft issue '["name_of_vendor","#tickets vendor_id",["ticket1","ticket2","until#_of_tickets"],"name_of_concert","description_of_concert"]' --permission name_of_vendor@active
+
+#Create account for ticket buyer
+
+	cleos create key --to-console
+	cleos create account eosio name_of_buyer public_key_from_previous_command 
+	cleos wallet import --name local --private-key private_key_from_previous_command
+
+#transfer token to buyer
+cleos push action nft transfer '[ "name_of_vendor", "name_of_buyer", "1 concert_id", "description" ]' -p name_of_vendor@active
+
+#verify tickets
+cleos get currency balance nft name_of_buyer
+
+cleos push action nft transfer '[ "name_of_vendor", "name_of_buyer", "1 concert_id", "description" ]' -p name_of_vendor@active
+
+
+
+
+
+
+
+
+ 
+
+
+

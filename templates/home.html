@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <title>HOME!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+  
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
+    <style>
+      body {
+        background-image: url('https://mspmag.com/downloads/51225/download/shutterstock_696332926.jpg?cb=5b21ba3e87f20324f36e2a2e13fe438c&w=1280');
+      }
+      </style>
+</head>
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="">
+            <span>
+              ELEMENTS
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/createAccount">Create account</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/issueTickets">Issue Tickets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/buyTicket">Buy Tickets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/useTicket">Use Ticket</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/verifyTickets">Verify Tickets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/exit">Exit</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>  
+    <div class="homeContainer layout_paddingL">
+      <hr>
+      <h2>
+        Create, Buy, & Use Tickets with us!
+      </h2>
+      <p>
+        Futuristic approach for the security and authenticity of concert tickets using eos Blockchain! Ensuring you are not ripped off! 
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
+ <!-- ACTUAL NAV BAR COPIAR EN TODOS LOS ARCHIVOS -->
+ 
