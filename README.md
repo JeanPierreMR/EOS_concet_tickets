@@ -3,7 +3,7 @@ Concert tickets app using an EOS blockchain
 
 # How to run Nodeos
 
-If you have nodeos source install just run the command to run EOS
+If you have nodeos source installed just run the command to run EOS
 
 nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::producer_api_plugin --plugin eosio::chain_api_plugin --plugin eosio::http_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --filter-on="*" --access-control-allow-origin='*' --max-transaction-time=1000 --contracts-console --http-validate-host=false --verbose-http-errors >> nodeos.log 2>&1 &
 
@@ -18,6 +18,8 @@ In this repository there are two files eosio.nft.cpp and eos.io.hpp, run the fol
 that should create two new files: eosio.nft.abi and eosio.nft.wasm
 
 Now we are ready to run the contract!
+
+NOTE: if you dont have eosio-cpp you can find it here: https://developers.eos.io/welcome/latest/getting-started-guide/local-development-environment/installing-eosiocdt
 
 
 
@@ -41,7 +43,34 @@ Note: privatekey has to be replaced with the privatekey output in command 2
 5. cleos set contract nft ./ eosio.nft.wasm eosio.nft.abi -p nft@active
 
 
-Great! now the command should be working
+Great! now the contract is in the EOS blockchain
+
+# How to run the WEB APP
+
+to do this the requirements are:
+  - python 3 installed
+  - flask installed
+
+Now run the command:
+
+1. python3 main.py
+
+Note: the command should be run while being in the folder where main.py is located
+
+now the WEB APP and contract is up, now go to your browser and search localhost:3023/ and try it out!
+
+
+# TEAM MEMBERS
+
+- Anesveth Maatens
+- David Corzo
+- Katherine Garcia
+- Jean Pierre Mejicanos
+- ian Jenatz
+- Fabricio Juarez
+- Adriana Mundo
+- Andrea Reyes
+- Pablo Velasquez
 
 
 
