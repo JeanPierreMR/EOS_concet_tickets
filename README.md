@@ -30,6 +30,7 @@ NOTE: if you dont have eosio-cpp you can find it here: https://developers.eos.io
 NOTE: save the password to unlock the wallet in the future
 
 1.1 cleos wallet import --name local 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+
 NOTE: run this command as is
 
 2. cleos create key --to-console
