@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import subprocess
 import pres
-# VARIABLE_CONDICIONAL = True #useTicket, vambiar de 0 a 1
 
 app = Flask(__name__)
 @app.route('/index.html', methods =['GET', 'POST'])
@@ -70,7 +69,6 @@ def verifyTickets():
         name = str(request.form['account'])
         ticket_id = str(request.form['ticket_id'])
         amount = pres.verify_tickets(name,ticket_id)
-        print
         return render_template('message.html',title="Verify tickets", message = f"You have {amount} {ticket_id}")
         
     else:

@@ -80,4 +80,4 @@ def verify_tickets(name,ticket_id):
     return amount
 
 
-print(type(verify_tickets("jean","WISYAN")))
+# print(type(verify_tickets("jean","WISYAN")))
