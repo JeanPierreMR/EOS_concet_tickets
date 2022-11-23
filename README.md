@@ -7,7 +7,7 @@ If you have nodeos source installed just run the command to run EOS
 
 nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::producer_api_plugin --plugin eosio::chain_api_plugin --plugin eosio::http_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --filter-on="*" --access-control-allow-origin='*' --max-transaction-time=1000 --contracts-console --http-validate-host=false --verbose-http-errors >> nodeos.log 2>&1 &
 
-#compile the contract
+# compile the contract
 
 In this repository there are two files eosio.nft.cpp and eos.io.hpp, run the following command in CLI while in the folder
 
